@@ -59,7 +59,7 @@ app.use((error, req, res, next) => { //error model
 
 });
 
-mongoose.connect('mongodb+srv://Admin:Admin.123@cluster1.rmsrf.mongodb.net/messages')
+mongoose.connect('mongodb+srv://postAdmin:Admin.123@user-post.afgha.mongodb.net/restPostMessages')
     .then(result => {
         const server = app.listen(8080);
         const io = require('./socket').init(server); // using websocket(socket.io)
